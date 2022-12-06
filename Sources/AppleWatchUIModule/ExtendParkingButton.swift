@@ -21,6 +21,10 @@ public struct ExtendParkingButton: View {
         #endif
     }
     
+    public init(action: @escaping (()-> Void)) {
+        self.selected = action
+    }
+    
     public var body: some View {
         Button(action: selected) {
             ZStack {
