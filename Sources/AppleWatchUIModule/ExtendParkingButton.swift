@@ -11,7 +11,7 @@ import SwiftUI
 @available(watchOS 6.0.0, *)
 @available(iOS 13.0.0, *)
 public struct ExtendParkingButton: View {
-    var selected: (() -> Void)
+    public var selected: (() -> Void)
     
     private var buttonHeight: CGFloat {
         #if os(iOS)
