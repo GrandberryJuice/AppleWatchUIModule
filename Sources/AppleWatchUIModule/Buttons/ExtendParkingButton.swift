@@ -10,9 +10,13 @@ import SwiftUI
 @available(macOS 10.15, *)
 @available(watchOS 6.0.0, *)
 @available(iOS 13.0.0, *)
+
 public struct ExtendParkingButton: View {
+    
+    // MARK: - Public Properties
     public var selected: (() -> Void)
     
+    // MARK: - Private Properties
     private var buttonHeight: CGFloat {
         #if os(iOS)
         50
@@ -21,6 +25,7 @@ public struct ExtendParkingButton: View {
         #endif
     }
     
+    // MARK: - Lifecycle
     public init(action: @escaping (()-> Void)) {
         self.selected = action
     }

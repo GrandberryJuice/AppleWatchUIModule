@@ -11,8 +11,15 @@ import SwiftUI
 @available(watchOS 6.0.0, *)
 @available(iOS 13.0.0, *)
 public struct StopParkingButton: View {
-    var selected: (() -> Void)
-    private var buttonHeight: CGFloat = 40
+    
+    // MARK: - Public properties
+    public var selected: (() -> Void)
+    private let buttonHeight: CGFloat = 40
+    
+    // MARK: - Lifecycle
+    public init(selected: @escaping () -> Void) {
+        self.selected = selected
+    }
     
     public var body: some View {
         Button(action: selected) {

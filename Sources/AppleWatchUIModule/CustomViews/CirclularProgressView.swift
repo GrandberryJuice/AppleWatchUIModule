@@ -10,8 +10,10 @@ import SwiftUI
 @available(macOS 10.15, *)
 @available(watchOS 6.0.0, *)
 @available(iOS 13.0.0, *)
+
 public struct CircularProgressView: View {
     
+    // MARK: - Public Properties
     let percentFilled: Double
     let lessThan15MinsLeft: Bool
     
