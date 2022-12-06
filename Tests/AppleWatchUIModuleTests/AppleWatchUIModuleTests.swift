@@ -1,11 +1,11 @@
 import XCTest
-@testable import AppleWatchModule
+@testable import AppleWatchUIModule
 
-final class AppleWatchModuleTests: XCTestCase {
+final class AppleWatchUIModuleTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(AppleWatchModule().text, "Hello, World!")
+        
     }
 }
